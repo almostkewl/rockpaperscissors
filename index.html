@@ -13,12 +13,12 @@
 
 
 //** Works for random, but not in a function!!
-let computerPlay = ["rock", "paper", "scissors"];
-let computerSelection = computerPlay[Math.floor(Math.random() * computerPlay.length)];
+// let computerPlay = ["rock", "paper", "scissors"];
+// let computerSelection = computerPlay[Math.floor(Math.random() * computerPlay.length)];
 
 
-console.log(computerSelection);
-
+// console.log(computerSelection);
+// <!--code below--> 
 function computerPlay () {
     let computer = ["rock", "paper", "scissors"];
     let computerSelection = computer[Math.floor(Math.random() * computer.length)];
@@ -27,11 +27,34 @@ function computerPlay () {
 }
 
 let playerSelection = "rock";
-
 console.log(playerSelection, computerPlay());
 
-
-
+function playRound (playerSelection, computerSelection) {
+    if ("paper", "scissors") {
+        return "Winner winner chicken dinner";
+    }
+    else {
+        return "Over";
+    }
+}
+    // if ("scissors", "rock") {
+    //     return "Loser";
+    // }
+    // if ("paper", "scissors") {
+    //     return "Looser";
+    // }
+    // if ("scissors", "paper") {
+    //     return "Winner Wiener";
+    // }
+    // if ("paper", "rock") {
+    //     return "Winner Winner";
+    // }
+    // if ("rock", "paper") {
+    //     return "Winner Dinner";
+    // }
+    // else  {
+    //     return "Draw" ;
+    // }
 
 
 
@@ -44,3 +67,15 @@ console.log(playerSelection, computerPlay());
     
 </body>
 </html>
+
+
+<script>
+
+
+
+
+
+
+
+</script>
+ 
