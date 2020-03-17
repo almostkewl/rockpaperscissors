@@ -19,6 +19,20 @@ let computerSelection = computerPlay[Math.floor(Math.random() * computerPlay.len
 
 console.log(computerSelection);
 
+function computerPlay () {
+    let computer = ["rock", "paper", "scissors"];
+    let computerSelection = computer[Math.floor(Math.random() * computer.length)];
+    return computerSelection;
+
+}
+
+let playerSelection = "rock";
+
+console.log(playerSelection, computerPlay());
+
+
+
+
 
 
 
