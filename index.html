@@ -18,7 +18,10 @@
 
 
 // console.log(computerSelection);
+
+
 // <!--code below--> 
+
 function computerPlay () {
     let computer = ["rock", "paper", "scissors"];
     let computerSelection = computer[Math.floor(Math.random() * computer.length)];
@@ -27,16 +30,25 @@ function computerPlay () {
 }
 
 let playerSelection = "rock";
-console.log(playerSelection, computerPlay());
+
+//** using let to try and get the playround function working
+
+
+    let playerSelection = "rock"
+    let computerSelection = "scissors"
+
 
 function playRound (playerSelection, computerSelection) {
-    if ("paper", "scissors") {
+    if (playerSelection == "rock", computerSelection == "scissors") {
         return "Winner winner chicken dinner";
     }
-    else {
-        return "Over";
-    }
+   else {
+       return "Looser"
+   }
 }
+console.log(playerSelection, computerPlay());
+console.log (playRound());
+
     // if ("scissors", "rock") {
     //     return "Loser";
     // }
