@@ -31,43 +31,37 @@ function computerPlay () {
 
 let playerSelection = "rock";
 
-//** using let to try and get the playround function working
-
-
-    let playerSelection = "rock"
-    let computerSelection = "scissors"
-
 
 function playRound (playerSelection, computerSelection) {
-    if (playerSelection == "rock", computerSelection == "scissors") {
-        return "Winner winner chicken dinner";
+    if (playerSelection == "rock" && computerSelection == "scissors") {
+        return "Winner";
     }
    else {
-       return "Looser"
+       return "Loser"
    }
 }
-console.log(playerSelection, computerPlay());
-console.log (playRound());
+console.log(playerSelection, computerSelection());
+console.log (playRound("rock", "scissors"));
 
-    // if ("scissors", "rock") {
-    //     return "Loser";
-    // }
-    // if ("paper", "scissors") {
-    //     return "Looser";
-    // }
-    // if ("scissors", "paper") {
-    //     return "Winner Wiener";
-    // }
-    // if ("paper", "rock") {
-    //     return "Winner Winner";
-    // }
-    // if ("rock", "paper") {
-    //     return "Winner Dinner";
-    // }
-    // else  {
-    //     return "Draw" ;
-    // }
 
+
+   
+   //** if statement from Dev Ed
+
+   var playerSelection = "rock"
+    var computerSelection = "scissors"
+   
+   function playRound (playerSelection, computerSelection) {
+       if(playerSelection === "rock") {
+           if(computerSelection === "scissors") {
+               return "Winner"
+           }
+           else {
+               return "Loser"
+           }
+       }
+   }
+console.log(playRound());
 
 
 
