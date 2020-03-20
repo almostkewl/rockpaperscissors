@@ -26,50 +26,36 @@ function computerPlay () {
     let computer = ["rock", "paper", "scissors"];
     let computerSelection = computer[Math.floor(Math.random() * computer.length)];
     return computerSelection;
-
 }
 
 let playerSelection = "rock";
-
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors") {
         return "Winner";
     }
+    if (playerSelection == computerSelection) {
+        return "Draw";
+    }
    else {
-       return "Loser"
+       return "Loser";
    }
 }
-console.log(playerSelection, computerSelection());
-console.log (playRound("rock", "scissors"));
 
+console.log(playerSelection, computerPlay());
+console.log(playRound("rock", computerPlay()));
 
-
-   
-   //** if statement from Dev Ed
-
-   var playerSelection = "rock"
-    var computerSelection = "scissors"
-   
-   function playRound (playerSelection, computerSelection) {
-       if(playerSelection === "rock") {
-           if(computerSelection === "scissors") {
-               return "Winner"
-           }
-           else {
-               return "Loser"
-           }
-       }
-   }
-console.log(playRound());
-
-
+//** <!-- Works above -->
 
 </script>
 
 
 </head>
 <body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
     
 </body>
 </html>
