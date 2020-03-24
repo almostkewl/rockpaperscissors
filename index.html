@@ -28,22 +28,29 @@ function computerPlay () {
     return computerSelection;
 }
 
+var computerPick = computerPlay();
 let playerSelection = "rock";
 
-function playRound (playerSelection, computerSelection) {
-    if (playerSelection == "rock" && computerSelection == "scissors") {
-        return "Winner";
+function playRound (playerSelection, computerPick) {
+    if (playerSelection == "rock" && computerPick == "scissors") {
+        return "Winner! Rock beats Scissors!";
     }
-    if (playerSelection == computerSelection) {
-        return "Draw";
+    if (playerSelection == "paper" && computerPick == "rock") {
+        return "Winner! Paper beats Rock!"
+    }
+    if (playerSelection == "Scissors" && computerPick == "Paper") {
+        return "Winner! Scissors beats Paper!"
+    }
+    if (playerSelection == computerPick) {
+        return "Draw! Even Steven!";
     }
    else {
        return "Loser";
    }
 }
 
-console.log(playerSelection, computerPlay());
-console.log(playRound("rock", computerPlay()));
+console.log(playerSelection, computerPick);
+console.log(playRound("rock", computerPick));
 
 //** <!-- Works above -->
 
