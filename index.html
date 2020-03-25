@@ -29,19 +29,23 @@ function computerPlay () {
 }
 
 var computerPick = computerPlay();
-let playerSelection = "rock";
+    
+ var playerPick = prompt("Rock, Paper, or Scissors?").toLowerCase();
+     
 
-function playRound (playerSelection, computerPick) {
-    if (playerSelection == "rock" && computerPick == "scissors") {
+
+
+function playRound (playerPick, computerPick) {
+    if (playerPick == "rock" && computerPick == "scissors") {
         return "Winner! Rock beats Scissors!";
     }
-    if (playerSelection == "paper" && computerPick == "rock") {
+    if (playerPick == "paper" && computerPick == "rock") {
         return "Winner! Paper beats Rock!"
     }
-    if (playerSelection == "Scissors" && computerPick == "Paper") {
+    if (playerPick == "scissors" && computerPick == "paper") {
         return "Winner! Scissors beats Paper!"
     }
-    if (playerSelection == computerPick) {
+    if (playerPick == computerPick) {
         return "Draw! Even Steven!";
     }
    else {
@@ -49,8 +53,8 @@ function playRound (playerSelection, computerPick) {
    }
 }
 
-console.log(playerSelection, computerPick);
-console.log(playRound("rock", computerPick));
+console.log(playerPick, computerPick);
+console.log(playRound(playerPick, computerPick));
 
 //** <!-- Works above -->
 
